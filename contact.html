@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Abhi Netra Facility Services Pune</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="brand">
+        <div class="brand-title">ABHI <span>NETRA</span></div>
+        <div class="brand-sub">Facility Services • Pune</div>
+      </a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="process.html">Industries & Process</a>
+        <a href="contact.html" class="btn-primary" style="padding: 0.55rem 1.15rem;">Request Assessment</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-banner">
+      <div class="badge">Get In Touch</div>
+      <h1>Let's Build Better Workplaces Together[cite: 5]</h1>
+      <p>
+        Schedule a site visit in Pune or send us your facility requirements to receive a structured deployment proposal[cite: 4, 5].
+      </p>
+    </section>
+
+    <section class="section">
+      <div class="contact-grid">
+        <div>
+          <div class="contact-item">
+            <span>Mobile / WhatsApp</span>
+            <a href="tel:+917058074205">+91 70580 74205[cite: 5]</a>
+          </div>
+          <div class="contact-item">
+            <span>Email Address</span>
+            <a href="mailto:abhinetra@gmail.com">abhinetra@gmail.com[cite: 5]</a>
+          </div>
+          <div class="contact-item">
+            <span>Location</span>
+            <p>Pune, Maharashtra, India[cite: 5]</p>
+          </div>
+          <div class="contact-item">
+            <span>Service Availability</span>
+            <p>As per agreed service scope and deployment plan[cite: 5]</p>
+          </div>
+        </div>
+
+        <!-- Replace YOUR_ACCESS_KEY_HERE with your free key from web3forms.com -->
+        <form id="enquiryForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Full Name *" required />
+            <input type="tel" name="phone" placeholder="Mobile Number *" required />
+          </div>
+          <div class="form-row">
+            <input type="text" name="organization" placeholder="Company / Housing Society Name" />
+            <input type="text" name="area" placeholder="Area in Pune (e.g., Hinjawadi, Kharadi)" />
+          </div>
+          <select name="service" required>
+            <option value="" disabled selected>Select Required Service *</option>
+            <option value="Corporate & Commercial Housekeeping">Corporate & Commercial Housekeeping[cite: 3]</option>
+            <option value="Residential Society Housekeeping">Residential Society Housekeeping[cite: 3]</option>
+            <option value="Industrial & Warehouse Housekeeping">Industrial & Warehouse Housekeeping[cite: 3]</option>
+            <option value="Manpower Supply & Deployment">Manpower Supply & Deployment[cite: 3]</option>
+            <option value="Pantry & Workplace Support">Pantry & Workplace Support[cite: 3]</option>
+            <option value="Deep Cleaning & Floor Care">Deep Cleaning & Floor Care[cite: 3]</option>
+            <option value="Facility & Vendor Coordination">Facility & Vendor Coordination[cite: 3]</option>
+          </select>
+          <textarea name="message" rows="4" placeholder="Describe your premises type, approximate area, shift timings, or required manpower..."></textarea>
+          <button type="submit" class="btn-primary">Submit Site Assessment Request</button>
+          <p id="formStatus" style="display:none; color:var(--accent-teal); font-size:0.9rem;">
+            Thank you! Add your free Web3Forms key in contact.html to receive submissions directly at abhinetra@gmail.com, or call +91 70580 74205[cite: 5].
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="brand">
+          <div class="brand-title">ABHI <span>NETRA</span> FACILITY SERVICES</div>
+          <div class="brand-sub">Your Trusted Facility Partner • Pune, Maharashtra[cite: 1]</div>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="process.html">Process</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <p class="disclaimer">
+        Note: Corporate entity status ("Private Limited") and official director designations apply subject to completion of Ministry of Corporate Affairs (MCA) incorporation and statutory filings[cite: 5].
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/917058074205" target="_blank" rel="noopener" class="whatsapp-float">WhatsApp Us</a>
+
+  <script>
+    document.getElementById('enquiryForm').addEventListener('submit', function(e) {
+      if (this.querySelector('input[name="access_key"]').value === 'YOUR_ACCESS_KEY_HERE') {
+        e.preventDefault();
+        document.getElementById('formStatus').style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>
